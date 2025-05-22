@@ -75,3 +75,34 @@ Iteration    Objective       Primal Inf.    Dual Inf.      Time
 
 Solved in 1 iterations and 0.02 seconds (0.00 work units)
 Optimal objective  4.000000000e+00
+
+Gurobi 12.0.1 (mac64[x86], Java) logging started Gio 22 Mag 12:45:29 2025
+
+Set parameter Username
+Set parameter LicenseID to value 2656444
+Academic license - for non-commercial use only - expires 2026-04-24
+Warning: Gurobi version mismatch between Java 12.0.2 and C library 12.0.1
+Warning: Gurobi version mismatch between Java 12.0.2 and Jni 12.0.1
+Set parameter Presolve to value 0
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[x86] - Darwin 22.2.0 22C65)
+
+CPU model: Intel(R) Core(TM) i5-8210Y CPU @ 1.60GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Non-default parameters:
+Presolve  0
+
+Optimize a model with 2 rows, 3 columns and 5 nonzeros
+Model fingerprint: 0xb07ec900
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 4e+00]
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0000000e+30   4.000000e+30   4.000000e+00      0s
+       1    4.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.03 seconds (0.00 work units)
+Optimal objective  4.000000000e+00
