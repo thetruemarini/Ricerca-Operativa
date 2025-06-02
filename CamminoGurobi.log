@@ -54,3 +54,140 @@ Solution count 7: 4557 4569 4570 ... 5439
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 4.557000000000e+03, best bound 4.557000000000e+03, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[x86], Java) logging started Lun  2 Giu 22:14:57 2025
+
+Set parameter Username
+Set parameter LicenseID to value 2656444
+Set parameter LogFile to value "CamminoGurobi.log"
+Academic license - for non-commercial use only - expires 2026-04-24
+Warning: Gurobi version mismatch between Java 12.0.2 and C library 12.0.1
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[x86] - Darwin 22.2.0 22C65)
+
+CPU model: Intel(R) Core(TM) i5-8210Y CPU @ 1.60GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 421 rows, 43684 columns and 131255 nonzeros
+Model fingerprint: 0xfbef34aa
+Variable types: 0 continuous, 43684 integer (43684 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [7e+01, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+02]
+Presolve removed 209 rows and 209 columns
+Presolve time: 0.27s
+Presolved: 212 rows, 43475 columns, 130628 nonzeros
+Variable types: 0 continuous, 43475 integer (43475 binary)
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      1s
+
+Sifting complete
+
+
+Root relaxation: objective 4.556524e+03, 297 iterations, 0.05 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4556.52381    0   27          - 4556.52381      -     -    0s
+H    0     0                    5439.0000000 4556.52381  16.2%     -    0s
+H    0     0                    5189.0000000 4556.52381  12.2%     -    0s
+H    0     0                    4601.0000000 4556.52381  0.97%     -    0s
+H    0     0                    4572.0000000 4556.52381  0.34%     -    0s
+H    0     0                    4570.0000000 4556.52381  0.29%     -    0s
+H    0     0                    4569.0000000 4556.52381  0.27%     -    0s
+H    0     0                    4557.0000000 4556.52381  0.01%     -    1s
+     0     0 4556.52381    0   27 4557.00000 4556.52381  0.01%     -    1s
+
+Explored 1 nodes (300 simplex iterations) in 1.01 seconds (0.34 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: 4557 4569 4570 ... 5439
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.557000000000e+03, best bound 4.557000000000e+03, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[x86], Java) logging started Lun  2 Giu 22:48:11 2025
+
+Set parameter Username
+Set parameter LicenseID to value 2656444
+Set parameter LogFile to value "CamminoGurobi.log"
+Academic license - for non-commercial use only - expires 2026-04-24
+Warning: Gurobi version mismatch between Java 12.0.2 and C library 12.0.1
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[x86] - Darwin 22.2.0 22C65)
+
+CPU model: Intel(R) Core(TM) i5-8210Y CPU @ 1.60GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 421 rows, 43684 columns and 131255 nonzeros
+Model fingerprint: 0xfbef34aa
+Variable types: 0 continuous, 43684 integer (43684 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [7e+01, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+02]
+Presolve removed 209 rows and 209 columns
+Presolve time: 0.99s
+Presolved: 212 rows, 43475 columns, 130628 nonzeros
+Variable types: 0 continuous, 43475 integer (43475 binary)
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      2s
+
+Sifting complete
+
+
+Root relaxation: objective 4.556524e+03, 297 iterations, 0.16 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4556.52381    0   27          - 4556.52381      -     -    2s
+H    0     0                    5439.0000000 4556.52381  16.2%     -    2s
+H    0     0                    5189.0000000 4556.52381  12.2%     -    3s
+H    0     0                    4601.0000000 4556.52381  0.97%     -    3s
+H    0     0                    4572.0000000 4556.52381  0.34%     -    3s
+H    0     0                    4570.0000000 4556.52381  0.29%     -    3s
+H    0     0                    4569.0000000 4556.52381  0.27%     -    3s
+H    0     0                    4557.0000000 4556.52381  0.01%     -    3s
+     0     0 4556.52381    0   27 4557.00000 4556.52381  0.01%     -    3s
+
+Explored 1 nodes (300 simplex iterations) in 3.74 seconds (0.34 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: 4557 4569 4570 ... 5439
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.557000000000e+03, best bound 4.557000000000e+03, gap 0.0000%
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[x86] - Darwin 22.2.0 22C65)
+
+CPU model: Intel(R) Core(TM) i5-8210Y CPU @ 1.60GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 421 rows, 43684 columns and 131255 nonzeros
+Model fingerprint: 0xfbef34aa
+Variable types: 0 continuous, 43684 integer (43684 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [7e+01, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+02]
+Presolved: 212 rows, 43475 columns, 130628 nonzeros
+
+Continuing optimization...
+
+
+Explored 1 nodes (300 simplex iterations) in 0.19 seconds (0.02 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: 4557 4569 4570 ... 5439
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.557000000000e+03, best bound 4.557000000000e+03, gap 0.0000%

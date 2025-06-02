@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.gurobi.gurobi.*;
 
@@ -195,5 +197,35 @@ public class CamminoGurobi {
         System.out.println("Tempo di risoluzione: " + tempoSolv + " secondi");
         System.out.println("Costo cammino ottimo = " + String.format("%.4f", objIntero));
 
+        //ricostruzione del cammino ottimo dal vettore x[i][j]
+        List<String> cammino = new ArrayList<>();
+        int curr = s;
+        while (curr != t) {
+            for (int j = 0; j < N; j++) {
+                if (x[curr][j].get(GRB.DoubleAttr.X) > 0.5) { // se x[i][j] è 1
+                    cammino.add("(" + curr + " -> " + j + ")");
+                    curr = j; // passo al nodo successivo
+                    break;
+                }
+            }
+        }
+        
+        //stampo il cammino ottimo
+        System.out.println("Cammino ottimo =  ");
+        for(int i=0; i<cammino.size(); i++) {
+            if (i>0) System.out.println(" ");
+            System.out.print(cammino.get(i));
+        }
+        System.out.println("\n");
+        System.out.println("Numero archi utilizzati = " + (cammino.size()));
+        System.out.println("Tempo = " + String.format("%.4f", tempoSolv) + " secondi");
+
+        //rilassamento continuo del modello intero
+        model.relax(); //ora x e y sono continue
+        model.optimize();
+        double objRelax = model.get(GRB.DoubleAttr.ObjVal);
+        System.out.println("Costo rilassamento continuo = " + String.format("%.4f", objRelax));
+
+        //TODO: nella relazione va segnato se il rilassamento è <,>,=
     }
 }
